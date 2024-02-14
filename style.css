@@ -15,42 +15,143 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url("https://media.istockphoto.com/id/474218822/photo/planet-earth.jpg?s=612x612&w=0&k=20&c=LI7wbqxTL0OuMqHgoUoR_2IVqeAHwpoue144y4Niu98=");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
+.bg-pan-top {
+	-webkit-animation: bg-pan-top 8s infinite both;
+	        animation: bg-pan-top 8s infinite both;
+}
+
+@-webkit-keyframes bg-pan-top {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+@keyframes bg-pan-top {
+  0% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+
+
 .container{
-	height: 500px;
-	width: 400px;
+	height: 600px;
+	width: 80%;
 	/*background-color: peachpuff;*/
 	border-radius: 30px;
 	padding: 20px;
 	box-shadow: 0px 0px 10px grey;
-
-}
-.search-icon{
-	width: 24px;
-	height: 24px;
-}
-.btn{
 	background-color: white;
-	border: none;
-	margin-top: 10px;
+	padding: 40px;
+
 }
 
-.textfield{
-	width: 280px;
+.search-btn img{
+	width: 30px;
 	height: 30px;
-	border-radius: 30px;
-	padding: 10px;
-	margin-left: 20px;
+	margin-top: 15px;
+
 }
 
-.btn:hover{
-	cursor: pointer;
+button{
+	border: none;
+	background-color: transparent;
+	margin-left: 10px;
 }
-.w-img1{
-	width: 150px;
-	height: 150px;
+
+.txtf-sbtn{
+	display: flex;
+	padding: 30px;
+	margin-left: 10px;
+}
+
+.textfield input{
+	width: 300px;
+	height: 50px;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid black;
+	padding: 20px;
+}
+
+
+.place-name h2{
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	margin-top: 40px;
+	color: maroon;
+}
+
+.place-name h3{
+	text-align: center;
+	font-size: 30px;
+	line-height: 40px;
+	color: grey;
+	font-style: oblique;
+	/*margin-top: 10px;*/
+}
+
+.tbl{
 	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+  font-size: 25px;
+  font-family: sans-serif;
+  width: 40%;
+  
+  
+}
+
+table{
+	width: 400px;
+	margin-top: 40px;
+}
+
+.td{
+	text-align: center;
+
+}
+
+.page-img img{
+	margin-top: -40px;
+	width: 400px;
+	height: 300px;
+
+}
+
+.img img{
+	width: 600px;
+	height: 500px;
+	padding: 40px;
+}
+.form{
+	margin-left: 20px;
+	padding: 20px;
+}
+
+.th1{
+	color: orange;
+
+}
+
+.th2{
+	font-size: 20px;
+	color: grey;
+	font-style: oblique;
+	letter-spacing: 2px;
+	line-height: 40px;
+}
+
+.search-btn button{
+	cursor: pointer;
 }

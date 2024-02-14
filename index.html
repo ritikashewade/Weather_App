@@ -2,30 +2,58 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="script.js">
-	
-	</script>
 	<title>Weather App</title>
-	<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUXt6hSlapqM6tbECAQbtqfQons_4IqbiAeg&usqp=CAU">
 </head>
 <body>
-
-<div class="mainDiv">
-	<div class="container">
-		<h1 align="center">Weather Forecast</h1>
-		<img class="w-img1" src="https://img.pikbest.com/png-images/qiantu/mbe-cute-sun-cloud-shower-weather-icon-gif-dynamic-map_2514136.png!sw800">
-		<div>
-			<form>
-			<input class="textfield" type="text" name="city" id="cityname" placeholder="Enter a city...">
-			
-			<button type="button" class="btn" onclick="fetchCity()">
-				<img class="search-icon" src="https://cdn.iconscout.com/icon/free/png-256/free-search-1767866-1502119.png" alt="search icon"></button>
-		</form>
+<div class="mainDiv bg-pan-top">
+	
+	<div class="container ">
+		<div style="text-align: center;">
+			<h1 style="color: orangered;font-size: 40px;font-family: cursive;">Weather Forecast</h1>
 		</div>
+		<div style="display:flex;">
+			<div class="img">
+			<img src="w3.gif">
+		</div>
+		<div class="form">
+					<div class="txtf-sbtn">
+
+						<div class="textfield">
+							<input type="text" name="city" id="cityname" placeholder="Enter a city..." autofocus>
+						</div>
+
+						<div class="search-btn">
+							<button onclick="fetchCity()">
+								<img src="https://freeiconshop.com/wp-content/uploads/edd/search-outline-filled.png">
+							</button>
+						</div>
+					</div>
+					
+					<div class="place-name">
+						<h2 id=city>City Name</h2>
+						<h3 id=temp>0°C</h3>
+					</div>
+
+					<div class="tbl">
+						<table>
+							<tr>
+								<th class="th1">Wind Speed</th>
+								<th class="th1">Humidity</th>
+							</tr>
+							<tr>
+								<th class="th2" id="wind_speed">0 km/hr</th>
+								<th class="th2" id="humidity">0 g/kg</th>
+							</tr>
+						</table>
+					</div>
+		</div>
+		</div>
+		
+		
 	</div>
 </div>
-
 </body>
 </html>
