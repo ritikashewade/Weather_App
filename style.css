@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Black+Ops+One&family=Bungee&family=Caveat:wght@400..700&family=Dosis:wght@200..800&family=Fugaz+One&family=Honk&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kalnia:wght@100..700&family=Miltonian+Tattoo&family=Press+Start+2P&family=Protest+Strike&family=Sacramento&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
 	color: black;
 	padding: 0px;
@@ -12,146 +14,105 @@
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: url("https://media.istockphoto.com/id/474218822/photo/planet-earth.jpg?s=612x612&w=0&k=20&c=LI7wbqxTL0OuMqHgoUoR_2IVqeAHwpoue144y4Niu98=");
-	background-repeat: no-repeat;
+	background-image: url("https://www.xtrafondos.com/wallpapers/impresionante-atardecer-8449.jpg");
+		background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-.bg-pan-top {
-	-webkit-animation: bg-pan-top 8s infinite both;
-	        animation: bg-pan-top 8s infinite both;
-}
-
-@-webkit-keyframes bg-pan-top {
-  0% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-@keyframes bg-pan-top {
-  0% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
 
 
+.mainHeading h1{
+	margin-left: 550px;
+	margin-top: 50px;
+	font-size: 50px;
+	-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
 
 .container{
-	height: 600px;
-	width: 80%;
-	/*background-color: peachpuff;*/
-	border-radius: 30px;
-	padding: 20px;
-	box-shadow: 0px 0px 10px grey;
-	background-color: white;
-	padding: 40px;
-
-}
-
-.search-btn img{
-	width: 30px;
-	height: 30px;
-	margin-top: 15px;
-
-}
-
-button{
-	border: none;
-	background-color: transparent;
-	margin-left: 10px;
-}
-
-.txtf-sbtn{
 	display: flex;
-	padding: 30px;
-	margin-left: 10px;
+	margin-left: 540px;
+	margin-top: 60px;
+	border: 2px solid black;
+	width: 30%;
+	height: 40px;
+	border-radius: 10px;
 }
-
 .textfield input{
-	width: 300px;
-	height: 50px;
+	width: 420px;
+	height: 37px;
+	border-radius: 10px;
+	background-color: transparent;
 	border: none;
 	outline: none;
-	border-bottom: 2px solid black;
-	padding: 20px;
+	font-size: 20px;
+	padding: 10px;
+}
+.search-btn button{
+	height: 37px;
+	width: 38px;
+	border-radius: 10px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.search-btn svg{
+	height: 20px;
+	width: 20px;
 }
 
-
-.place-name h2{
-	text-align: center;
-	font-size: 40px;
-	line-height: 40px;
-	margin-top: 40px;
-	color: maroon;
+.cityname #city{
+font-family: "Bungee", sans-serif;
+font-size: 40px;
+margin:6px;
+color: white;
+/*margin-top: 30px;*/
+margin-left:260px;
 }
 
-.place-name h3{
-	text-align: center;
+.cityname #temp{
+margin-left:300px;
+color: white;
 	font-size: 30px;
-	line-height: 40px;
-	color: grey;
-	font-style: oblique;
-	/*margin-top: 10px;*/
-}
-
-.tbl{
-	display: block;
-  font-size: 25px;
-  font-family: sans-serif;
-  width: 40%;
-  
-  
-}
-
-table{
-	width: 400px;
-	margin-top: 40px;
-}
-
-.td{
-	text-align: center;
-
-}
-
-.page-img img{
-	margin-top: -40px;
-	width: 400px;
-	height: 300px;
-
-}
-
-.img img{
-	width: 600px;
-	height: 500px;
-	padding: 40px;
-}
-.form{
-	margin-left: 20px;
-	padding: 20px;
+	
 }
 
 .th1{
-	color: orange;
+	color: darkorange;
+	font-size: 30px;
+}
 
+.wind-humidity{
+	margin-left: 340px;
+	height: 130px;
+	margin-top: 30px;
+	border: 2px solid white;
+	width: 480px;
+	padding: 30px;
+	border-radius: 20px;
+	background-color: white;
+	opacity: 0.7;
+	display: flex;
+}
+
+.humidity-div{
+	margin-left: 50px;
+	border-left: 2px solid black;
 }
 
 .th2{
+	margin-left: 40px;
+	line-height: 30px;
 	font-size: 20px;
 	color: grey;
-	font-style: oblique;
-	letter-spacing: 2px;
-	line-height: 40px;
 }
 
-.search-btn button{
-	cursor: pointer;
+.humidity-div .th1{
+	margin-left: 60px;
 }
+.humidity-div .th2{
+	margin-left: 100px;
+}
+

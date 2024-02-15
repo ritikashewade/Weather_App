@@ -8,52 +8,47 @@
 	<title>Weather App</title>
 </head>
 <body>
-<div class="mainDiv bg-pan-top">
+<div class="mainDiv ">
 	
-	<div class="container ">
-		<div style="text-align: center;">
-			<h1 style="color: orangered;font-size: 40px;font-family: cursive;">Weather Forecast</h1>
-		</div>
-		<div style="display:flex;">
-			<div class="img">
-			<img src="w3.gif">
-		</div>
-		<div class="form">
-					<div class="txtf-sbtn">
-
-						<div class="textfield">
-							<input type="text" name="city" id="cityname" placeholder="Enter a city..." autofocus>
-						</div>
-
-						<div class="search-btn">
-							<button onclick="fetchCity()">
-								<img src="https://freeiconshop.com/wp-content/uploads/edd/search-outline-filled.png">
-							</button>
-						</div>
-					</div>
-					
-					<div class="place-name">
-						<h2 id=city>City Name</h2>
-						<h3 id=temp>0°C</h3>
-					</div>
-
-					<div class="tbl">
-						<table>
-							<tr>
-								<th class="th1">Wind Speed</th>
-								<th class="th1">Humidity</th>
-							</tr>
-							<tr>
-								<th class="th2" id="wind_speed">0 km/hr</th>
-								<th class="th2" id="humidity">0 g/kg</th>
-							</tr>
-						</table>
-					</div>
-		</div>
-		</div>
-		
-		
+	<div class="mainHeading">
+		<h1>Weather Forecasting</h1>
 	</div>
+	<div class="container">
+		<div class="textfield">
+			<input type="text" name="" id="cityname" placeholder="Enter a city..." autofocus>
+		</div>
+		<div class="search-btn">
+			<button onclick="fetchCity()">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+				  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<div style="display:flex;margin-top: 90px;">
+		
+		<div class="cityname">
+		<h1 id="city">City name</h1>
+		<h3 id=temp class="tmp">0°C</h3>
+		<h1></h1>
+	</div>
+
+	<div class="wind-humidity">
+		
+		<div class="wind-div">
+			<h3 class="th1">Wind Speed</h3>
+			<h4 class="th2" id="wind_speed">0 km/hr</h4>
+		</div>
+		<div class="humidity-div">
+			<h3 class="th1">Humidity</h3>
+			<h4 class="th2" id="humidity">0 g/kg</h4>
+		</div>
+
+	</div>
+	
+
+	</div>
+
 </div>
 </body>
 </html>
